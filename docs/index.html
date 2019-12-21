@@ -71,6 +71,7 @@
                 <div id="snippet">
                     <pre><code class="js">const discord = require("discord.js");
 const client = new Discord.Client();
+
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -101,6 +102,7 @@ client.login("TOKEN");</code></pre>
                 <div id="snippet">
                     <pre><code class="js">const Discord = require("discord.js");
 const client = new Discord.Client();
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -131,6 +133,7 @@ client.login("TOKEN");</code></pre>
                 <div id="snippet">
                     <pre><code class="js">const Discord = require("discord.js");
 const client = new Discord.Client();
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -142,6 +145,7 @@ client.on("message", message => {
     message.reply(message.author.avatarURL);
   }
 });
+
 client.login('your token here');</code></pre>
                 </div>
             </article>
@@ -150,36 +154,38 @@ client.login('your token here');</code></pre>
             <h2>Moderation</h2>
             <article>
                 <p>This command allows you to kick a member</p>
-                <code>const Discord = require('discord.js');
-                    const client = new Discord.Client();
-                    client.on('ready', () => {
-                    console.log('I am ready!');
-                    });
-                    client.on('message', message => {
-                    if (!message.guild) return;
-                    if (message.content.startsWith('!kick')) {
-                    const user = message.mentions.users.first();
-                    if (user) {
-                    const member = message.guild.member(user);
-                    if (member) {
-                    member.kick('Optional reason that will display
-                    in the audit logs').then(() => {
-                    message.reply(`Successfully kicked ${user.tag}`);
-                    }).catch(err => {
-                    message.reply('I was unable to kick the member');
-                    console.error(err);
-                    });
-                    } else {
-                    message.reply('That user isn\'t in this guild!');
-                    }
-                    } else {
-                    message.reply('You didn\'t mention the user to kick!');
-                    }
-                    }
-                    });
+                <div id="snippet">
+                    <pre><code class="js">const Discord = require("discord.js");
+const client = new Discord.Client();
 
-                    client.login('your token here');
-                </code>
+client.on("ready", () => {
+  console.log("I am ready!");
+});
+
+client.on("message", message => {
+  if (!message.guild) return;
+  if (message.content.startsWith("!kick")) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+        if (member) {
+          member.kick("Optional reason that will display in the audit logs").then(() => {
+            message.reply(`Successfully kicked ${user.tag}.`);
+          }).catch(err => {
+            message.reply("I was unable to kick the member");
+            console.error(err);
+          });
+        } else {
+          message.reply("That user isn't in this guild!");
+        }
+    } else {
+      message.reply("You didn't mention the user to kick!");
+    }
+  }
+});
+
+client.login("TOKEN");</code></pre>
+                </div>
                 <p>This command allows you to ban a member</p>
                 <code>const Discord = require('discord.js');
                     const client = new Discord.Client();
