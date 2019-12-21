@@ -37,7 +37,7 @@ header img {
 #navbar ul {
     height: auto;
     padding: 0;
-    margin-top: -10px;
+    margin-top: 0;
     overflow-y: auto;
     overflow-x: hidden;
     border-left: 4px solid #7289da!important;
