@@ -83,6 +83,11 @@ section li {
     margin: 15px 0px 0px 20px;
 }
 
+#snippet {
+  width: 60%;
+  overflow-x: scroll;
+}
+
 code.js.hljs.javascript {
     word-break: normal;
     word-wrap: normal;
@@ -121,5 +126,8 @@ code.js.hljs.javascript {
 @media only screen and (max-width: 400px) {
     #main-doc {
         margin-left: -10px;
+    }
+    #snippet {
+      width: auto;
     }
 }
