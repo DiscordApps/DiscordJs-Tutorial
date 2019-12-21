@@ -67,12 +67,12 @@ header img {
 }
 
 #main-doc {
-    position: absolute;
+    position: fixed;
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
     display: block;
-    width: 85%;
+    width: 70%;
 }
 
 section article {
