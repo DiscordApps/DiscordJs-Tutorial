@@ -225,38 +225,47 @@ client.login("TOKEN");</code></pre>
             <h2>Webhooks</h2>
             <article>
                 <p>Send a message using a webhook</p>
-                <code>const Discord = require('discord.js');
-                    const hook = new Discord.WebhookClient
-                    ('webhook id', 'webhook token');
-                    hook.send('I am now alive!');
-                </code>
+                <div id="snippet">
+                  <pre><code class="js">const Discord = require("discord.js");
+const hook = new Discord.WebhookClient("webhook id", "webhook token");
+hook.send("I am now alive!");
+                  </code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="emoji">
             <h2>Emoji</h2>
             <article>
                 <p>Edit the emoji</p>
-                <code>emoji.edit({name: 'newemoji'})
-                    .then(e => console.log(`Edited emoji ${e}`))
+                <div id="snippet">
+                  <pre><code class="js"><Emoji>.edit({ name: 'NewNameForEmoji' })
+                    .then(e => console.log(`Edited emoji ${e}.`))
                     .catch(console.error);
-                </code>
+                  </code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="server_greeting">
             <header>Server Greeting</header>
             <article>
                 <p>Allows the bot to welcome new guild members when they join</p>
-                <code>const Discord = require('discord.js');
-                    const client = new Discord.Client();
-                    client.on('ready', () => {
-                    console.log('I am ready!');
-                    }); client.on('guildMemberAdd', member => {
-                    const hannel = member.guild.channels.find
-                    (ch => ch.name === 'member-log');
-                    if (!channel) return; channel.send
-                    (`Welcome to the server, ${member}`);
-                    }); client.login('your token here');
-                </code>
+                <div id="snippet">
+                  <pre><code class="js">const Discord = require("discord.js");
+const client = new Discord.Client();
+
+client.on("ready", () => {
+  console.log("I am ready!");
+});
+
+client.on("guildMemberAdd", member => {
+  const channel = member.guild.channels.find(c => c.name === "arrivals");
+  if (!channel) return;
+  
+  channel.send(`Welcome to the server, ${member}. :wave:`);
+});
+
+client.login("TOKEN");</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="purge">
