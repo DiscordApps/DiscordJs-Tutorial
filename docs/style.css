@@ -32,7 +32,7 @@ header {
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    border-left: 2px solid #7289da!important;
+    border-left: 4px solid #7289da!important;
 }
 
 #navbar li {
