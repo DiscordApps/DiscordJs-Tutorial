@@ -34,7 +34,7 @@
     <!--MainDoc-->
     <main id="main-doc">
         <section class="main-section" id="welcome">
-            <header>Welcome</header>
+            <h2>Welcome</h2>
             <article>
                 <p>Welcome to the discord.js v11.5 documentation. The v11.5 release contains bugfixes from v11.4 and backports features from the in-development v12.Version 12 is still very much a work-in-progress, as we're aiming to make it the best it can possibly be before releasing. If you are fond of living life on the bleeding-edge, check out the master branch.
 
@@ -49,7 +49,8 @@
                     <li>100% coverage of the discord API</li>
                 </ul>
                 <h2>Example code</h2>
-                <code>const discord = require('discord.js);
+                <code>
+                    const discord = require('discord.js);
                     const client = new Discord.Client();
                     client.on('ready', () => {
                     console.log(`Logged in as ${client.user.tag}!`);
@@ -63,7 +64,7 @@
             </article>
         </section>
         <section class="main-section" id="ping">
-            <header>Ping</header>
+            <h2>Ping</h2>
             <article>
                 <p>This command returns the word 'pong' whenever it's called upon with 'ping'</p>
                 <p>Guide:</p>
@@ -92,7 +93,7 @@
             </article>
         </section>
         <section class="main-section" id="avatars">
-            <header>Avatars</header>
+            <h2>Avatars</h2>
             <article>
                 <p>This command returns a link to the user's avatar</p>
                 <p>Guide:</p>
@@ -123,7 +124,7 @@
             </article>
         </section>
         <section class="main-section" id="moderation">
-            <header>Moderation</header>
+            <h2>Moderation</h2>
             <article>
                 <p>This command allows you to kick a member</p>
                 <code>const Discord = require('discord.js');
@@ -191,7 +192,7 @@
             </article>
         </section>
         <section class="main-section" id="webhooks">
-            <header>Webhooks</header>
+            <h2>Webhooks</h2>
             <article>
                 <p>Send a message using a webhook</p>
                 <code>const Discord = require('discord.js');
@@ -202,7 +203,7 @@
             </article>
         </section>
         <section class="main-section" id="emoji">
-            <header>Emoji</header>
+            <h2>Emoji</h2>
             <article>
                 <p>Edit the emoji</p>
                 <code>emoji.edit({name: 'newemoji'})
@@ -229,7 +230,7 @@
             </article>
         </section>
         <section class="main-section" id="purge">
-            <header>Purge</header>
+            <h2>Purge</h2>
             <article>
                 <p>This command can remove bulk messages from a channel, up to 100</p>
                 <code>if(command === "purge") {
@@ -247,7 +248,7 @@
             </article>
         </section>
         <section class="main-section" id="guild">
-            <header>Guild</header>
+            <h2>Guild</h2>
             <article>
                 <p>This piece of code creates a guild</p>
                 <code>async function createGuild(client, message) {
@@ -273,7 +274,7 @@
             </article>
         </section>
         <section class="main-section" id="rich_embed">
-            <header>Rich Embed</header>
+            <h2>Rich Embed</h2>
             <article>
                 <p>This created a rich embed</p>
                 <code>const embed = new Discord.RichEmbed()
@@ -299,7 +300,7 @@
             </article>
         </section>
         <section class="main-section" id="swear_detector">
-            <header>Swear Detector</header>
+            <h2>Swear Detector</h2>
             <article>
                 <p>This quick and dirty swear detector takes an array of swear words we don't want to see, and triggers on it.
                 </p>
