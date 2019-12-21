@@ -42,6 +42,10 @@ header {
     width: 100%;
 }
 
+#navbar li:hover {
+  color: #6f7375;
+}
+
 #navbar a {
     display: block;
     padding: 10px 30px;
