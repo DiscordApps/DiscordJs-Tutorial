@@ -27,6 +27,11 @@ header {
     font-size: 1.8em;
 }
 
+header-img {
+  width: 70px;
+  height: 30px;
+}
+
 #navbar ul {
     height: auto;
     padding: 0;
