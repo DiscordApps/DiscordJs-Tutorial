@@ -7,14 +7,16 @@
     <script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
     <script>
       function initSnippet() {
-        let snippet = document.querySelector('#snippet pre code');
-        hljs.highlightBlock(snippet);
-        let style = "monokai-sublime";
-        for (let link of document.querySelectorAll('.codestyle')) {
-          link.rel = 'stylesheet';
-          link.disabled = !link.href.match(style + '\\.css$');
+        for (var i = 0; i < 50; i++) {
+            let snippet = document.querySelector('#snippet pre code');
+            hljs.highlightBlock(snippet);
+            let style = "monokai-sublime";
+            for (let link of document.querySelectorAll('.codestyle')) {
+              link.rel = 'stylesheet';
+              link.disabled = !link.href.match(style + '\\.css$');
+            }
+            snippet.result.language = "js";
         }
-        snippet.result.language = "js";
       }
 
       addEventListener('load', initSnippet);
