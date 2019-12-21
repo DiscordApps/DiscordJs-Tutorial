@@ -93,7 +93,7 @@ code.js.hljs.javascript {
     padding: 20px;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 920) {
 
     /* For mobile phones: */
     #navbar ul {
