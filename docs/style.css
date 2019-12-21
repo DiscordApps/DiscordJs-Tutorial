@@ -67,7 +67,7 @@ header img {
 }
 
 #main-doc {
-    position: fixed;
+    position: absolute;
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
