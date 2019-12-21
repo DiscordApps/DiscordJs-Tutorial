@@ -83,7 +83,7 @@ section li {
     margin: 15px 0px 0px 20px;
 }
 
-code {
+/* code {
     display: block;
     text-align: left;
     white-space: pre;
@@ -95,9 +95,7 @@ code {
     border-radius: 3px;
     width: 700px;
     font-family: 'Quicksand', sans-serif;
-
-    
-}
+} */
 
 @media only screen and (max-width: 815px) {
 
@@ -132,15 +130,12 @@ code {
         margin-left: -10px;
     }
 
-    code {
+/*     code {
         margin-left: -20px;
         width: 100%;
         padding: 15px;
         padding-left: 10px;
         padding-right: 45px;
         min-width: 233px;
-  
-
-
-    }
+    } */
 }
