@@ -5,30 +5,7 @@
     <title>Technical Documentation Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
-    <script>
-      function initSnippet() {
-        let snippet = document.querySelector('#snippet pre code');
-        hljs.highlightBlock(snippet);
-        let style = document.getElementById('style-link').textContent;
-        for (let link of document.querySelectorAll('.codestyle')) {
-          link.rel = 'stylesheet';
-          link.disabled = !link.href.match(style + '\\.css$');
-        }
-        document.getElementById('language-link').innerHTML = snippet.result.language;
-        for (let control of document.querySelectorAll('#control a')) {
-          control.addEventListener('click', e => {
-            fetch(control.href, {headers: new Headers({'X-Requested-With': 'XMLHttpRequest'})})
-              .then(response => response.text()).then(text => {
-                document.getElementById('snippet').innerHTML = text;
-                initSnippet();
-              });
-            e.preventDefault();
-          });
-        }
-      }
-
-      addEventListener('load', initSnippet);
-  </script>
+    <script>hljs.initHighlightingOnLoad();</script>
   <link class="codestyle" rel="prefetch alternate stylesheet" href="/static/demo/styles/monokai-sublime.css">
 </head>
 
