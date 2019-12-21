@@ -71,6 +71,8 @@ header img {
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
+    display: block;
+    width: 85%;
 }
 
 section article {
@@ -81,10 +83,6 @@ section article {
 
 section li {
     margin: 15px 0px 0px 20px;
-}
-
-#snippet {
-    width: 75%;
 }
 
 code.js.hljs.javascript {
