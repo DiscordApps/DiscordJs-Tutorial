@@ -7,8 +7,9 @@
     <script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
     <script>
       function initSnippet() {
-        for (var i = 0; i < 50; i++) {
-            let snippet = document.querySelector('#snippet pre code');
+          let snippets = document.querySelectorAll('#snippet pre code');
+          for (var i = 0; i < snippets.length; i++) {
+            var snippet = snippets[i];
             hljs.highlightBlock(snippet);
             let style = "monokai-sublime";
             for (let link of document.querySelectorAll('.codestyle')) {
