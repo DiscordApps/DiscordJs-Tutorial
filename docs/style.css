@@ -18,15 +18,13 @@ body {
     left: 0px;
     width: 300px;
     height: 100%;
-    boder-left: 2px solid #7289da;
 }
 
 header {
     color: #7289da;
     margin: 10px;
-    text-align: center;
+    margin-left: 30px;
     font-size: 1.8em;
-    font-weight: thin;
 }
 
 #navbar ul {
@@ -34,6 +32,7 @@ header {
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    border-left: 2px solid #7289da!important;
 }
 
 #navbar li {
