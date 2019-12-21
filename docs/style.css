@@ -18,6 +18,7 @@ body {
     left: 0px;
     width: 300px;
     height: 100%;
+    boder-left: 2px solid #7289da;
 }
 
 header {
@@ -45,7 +46,6 @@ header {
 #navbar a {
     display: block;
     padding: 10px 30px;
-    color: #7289da;
     text-decoration: none;
     border-style: solid;
     border-radius:  0px 30px 30px 0px;
