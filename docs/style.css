@@ -83,19 +83,12 @@ section li {
     margin: 15px 0px 0px 20px;
 }
 
-/* code {
-    display: block;
-    text-align: left;
-    white-space: pre;
-    position: relative;
+code.js.hljs.javascript {
     word-break: normal;
     word-wrap: normal;
-    line-height: 2;
-    background-color: #23272a;
-    border-radius: 3px;
-    width: 700px;
-    font-family: 'Quicksand', sans-serif;
-} */
+    background-color: 2C2F33!important;
+    padding: 15px;
+}
 
 @media only screen and (max-width: 815px) {
 
@@ -129,13 +122,4 @@ section li {
     #main-doc {
         margin-left: -10px;
     }
-
-/*     code {
-        margin-left: -20px;
-        width: 100%;
-        padding: 15px;
-        padding-left: 10px;
-        padding-right: 45px;
-        min-width: 233px;
-    } */
 }
