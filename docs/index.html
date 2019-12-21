@@ -78,7 +78,8 @@ client.on("message", msg => {
   }
 });
 
-client.login("token");</code></pre></div>
+client.login("TOKEN");</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="ping">
@@ -94,20 +95,21 @@ client.login("token");</code></pre></div>
                     <li>Log the bot in with the special token</li>
                 </ul>
                 <h2>Example code</h2>
-                <code>const Discord = require('discord.js');
-                    const client = new Discord.Client();
-                    client.on('ready', () => {
-                    console.log('I am ready!');
-                    });
+                <div id="snippet">
+                    <pre><code class="js">const Discord = require("discord.js");
+const client = new Discord.Client();
+client.on("ready", () => {
+  console.log("I am ready!");
+});
 
-                    client.on('message', message => {
-                    if (message.content === 'ping') {
-                    message.channel.send('pong');
-                    }
-                    });
+client.on("message", message => {
+  if (message.content === "ping") {
+    message.channel.send("Pong!");
+  }
+});
 
-                    client.login('your token here');
-                </code>
+client.login("TOKEN");</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="avatars">
