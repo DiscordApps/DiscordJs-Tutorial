@@ -128,22 +128,24 @@ client.login("TOKEN");</code></pre>
                     <li>Log the bot in with the special token</li>
                 </ul>
                 <h2>Example code</h2>
-                <code>const Discord = require('discord.js');
-                    const client = new Discord.Client();
-                    client.on('ready', () => {
-                    console.log('I am ready!');
-                    });
-
-                    client.on('message', message => {
-                    // If the message is "what is my avatar"
-                    if (message.content === 'what is my avatar') {
-                    // Send the user's avatar URL
-                    message.reply(message.author.avatarURL);
-                    }
-                    });
-
-                    client.login('your token here');
+                <code>
                 </code>
+                <div id="snippet">
+                    <pre><code class="js">const Discord = require("discord.js");
+const client = new Discord.Client();
+client.on("ready", () => {
+  console.log("I am ready!");
+});
+               
+client.on("message", message => {
+  // If the message is "what is my avatar"
+  if (message.content === "what is my avatar") {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
+  }
+});
+client.login('your token here');</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="moderation">
