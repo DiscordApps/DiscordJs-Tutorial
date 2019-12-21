@@ -69,6 +69,7 @@ header img {
 }
 
 #main-doc {
+    margin-right: 14px;
     position: absolute;
     margin-left: 310px;
     padding: 20px;
@@ -94,7 +95,7 @@ code.js.hljs.javascript {
     padding: 20px;
 }
 
-@media only screen and (max-width: 920) {
+@media only screen and (max-width: 800) {
 
     /* For mobile phones: */
     #navbar ul {
