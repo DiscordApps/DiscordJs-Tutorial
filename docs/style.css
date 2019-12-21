@@ -28,7 +28,7 @@ header {
 }
 
 #navbar ul {
-    height: 88%;
+    height: auto;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
@@ -80,9 +80,9 @@ code {
     word-wrap: normal;
     line-height: 2;
     background-color: #23272a;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 700px;
-  font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
     
 }
