@@ -72,10 +72,7 @@ header img {
     padding: 20px;
     margin-bottom: 110px;
     display: block;
-}
-
-#snippet {
-  width: 90%;
+    width: 80%;
 }
 
 section article {
