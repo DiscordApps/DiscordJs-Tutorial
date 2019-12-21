@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.JS Guide</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
     <script>
@@ -311,27 +312,24 @@ createGuild(client, message);</code></pre>
         <section class="main-section" id="rich_embed">
             <h2>Rich Embed</h2>
             <article>
-                <p>This created a rich embed</p>
-                <code>const embed = new Discord.RichEmbed()
-                    .setTitle("This is your title, it can hold 256 characters")
-                    .setAuthor("Author Name",
-                    "https://i.imgur.com/lm8s41J.png")
-                    .setColor(0x00AE86)
-                    .setDescription("This is the main body of text
-                    , it can hold 2048 characters.")
-                    .setImage("http://i.imgur.com/yVpymuV.png")
-                    .setThumbnail("http://i.imgur.com/p2qNFag.png")
-                    .setTimestamp()
-                    .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-                    .addField("This is a field title, it can hold 256 characters",
-                    "This is a field value, it can hold 1024 characters.")
-                    .addField("Inline Field", "They can also be inline.", true)
-                    .addBlankField(true)
-                    .addField("Inline Field 3", "You can have a maximum
-                    of 25 fields.", true);
+                <p>This creates a rich embed.</p>
+                <div id="snippet">
+                  <pre><code class="js">const embed = new Discord.RichEmbed()
+  .setTitle("This is your title, it can hold 256 characters")
+  .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
+  .setColor(0x00AE86)
+  .setDescription("This is the main body of text, it can hold 2048 characters.")
+  .setImage("http://i.imgur.com/yVpymuV.png")
+   .setThumbnail("http://i.imgur.com/p2qNFag.png")
+   .setTimestamp()
+   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+   .addField("This is a field title, it can hold 256 characters","This is a field value, it can hold 1024 characters.")
+   .addField("Inline Field", "They can also be inline.", true)
+   .addBlankField(true)
+   .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
 
-                    message.channel.send({embed});
-                </code>
+message.channel.send(embed);</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="swear_detector">
@@ -339,12 +337,13 @@ createGuild(client, message);</code></pre>
             <article>
                 <p>This quick and dirty swear detector takes an array of swear words we don't want to see, and triggers on it.
                 </p>
-                <code>const swearWords = ["darn", "shucks", "frak", "shite"];
-                    if( swearWords.some(word => message.content.includes(word)) ) {
-                    message.reply("Oh no you said a bad word!!!");
-                    // Or just do message.delete();
-                    }
-                </code>
+                <div id="snippet">
+                  <pre><code class="js">const swearWords = ["darn", "shucks", "frak", "shite"];
+if (swearWords.some(word => message.content.includes(word))) {
+  message.reply("Oh no you said a bad word!!!");
+  message.delete().catch(e => {});
+}</code></pre>
+                </div>
             </article>
         </section>
     </main>
