@@ -270,45 +270,42 @@ client.login("TOKEN");</code></pre>
         <section class="main-section" id="purge">
             <h2>Purge</h2>
             <article>
-                <p>This command can remove bulk messages from a channel, up to 100</p>
-                <code>if(command === "purge") {
-                    const deleteCount = parseInt(args[0], 10);
-                    return message.reply("Please provide a number
-                    between 2 and 100 for
-                    the number of messages to delete");
-                    const fetched = await message.channel.fetchMessages
-                    ({limit: deleteCount});
-                    message.channel.bulkDelete(fetched)
-                    .catch(error => message.reply(`Couldn't delete
-                    messages because of: ${error}`));
-                    }
-                </code>
+                <p>This command can remove bulk messages from a channel, up to 100.</p>
+                <div id="snippet">
+                  <pre><code class="js">const deleteCount = parseInt(args[0], 10);
+if (isNaN(deleteCount) || deleteCount < 2 || deleteCount > 100) return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
+const fetched = await message.channel.fetchMessages({ limit: deleteCount });
+message.channel.bulkDelete(fetched).catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
+message.reply(`Deleted **${deleteCount}** messages.`)</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="guild">
             <h2>Guild</h2>
             <article>
                 <p>This piece of code creates a guild</p>
-                <code>async function createGuild(client, message) {
-                    try {
-                    const guild = await client.user.createGuild('ExampleGuild', 'london');
-                    const defaultChannel =
-                    guild.channels.find(channel =>channel.permissionsFor(guild.me).
-                    has("SEND_MESSAGES"));
-                    const invite = await defaultChannel.createInvite();
-                    await message.author.send(invite.url);
-                    const role = await guild.createRole(
-                    { name:'Example Role', permissions:['ADMINISTRATOR'] });
-                    await message.author.send(role.id);
-                    } catch (e) {
-                    console.error(e);
-                    }
-                    }
+                <div id="snippet">
+                  <pre><code class="js">async function createGuild(client, message) {
+  try {
+    const guild = await client.user.createGuild("Example Guild", "london");
+    const defaultChannel = guild.channels.find(channel => channel.permissionsFor(guild.me).has("SEND_MESSAGES"));
+    const invite = await defaultChannel.createInvite();
+    await message.author.send(invite.url);
+    const role = await guild.createRole({ name: "Owner", permissions: ["ADMINISTRATOR"] });
+    await message.author.send(role.id);
+    
+    client.on("guildMemberAdd", async (member) => {
+      if (member.guild.id === guild.id && member.id === message.author.id) {
+        await member.addRole(role.id);
+      }
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
 
-                    createGuild(client, message);
-                    // Run this once you've joined the bot created guild.
-                    message.member.addRole('THE ROLE ID YOU GET SENT');
-                </code>
+createGuild(client, message);</code></pre>
+                </div>
             </article>
         </section>
         <section class="main-section" id="rich_embed">
