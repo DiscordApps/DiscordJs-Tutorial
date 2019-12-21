@@ -22,15 +22,15 @@ body {
 
 header {
     color: #7289da;
-    margin: 10px;
-    margin-left: 30px;
     font-size: 1.8em;
-    background-color: #2196f3;
 }
 
 header img {
   width: 250px;
   height: 80px;
+  margin: 10px;
+  margin-left: 30px;
+  background-color: #2196f3;
 }
 
 #navbar ul {
