@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow: hidden;
     background-color: #2c2f33;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
@@ -67,7 +68,6 @@ header img {
 }
 
 #main-doc {
-    overflow: hidden;
     position: absolute;
     margin-left: 310px;
     padding: 20px;
