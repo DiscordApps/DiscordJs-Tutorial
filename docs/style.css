@@ -84,8 +84,7 @@ section li {
 }
 
 #snippet {
-  width: 60%;
-  overflow-x: scroll;
+    width: 75%;
 }
 
 code.js.hljs.javascript {
@@ -126,8 +125,5 @@ code.js.hljs.javascript {
 @media only screen and (max-width: 400px) {
     #main-doc {
         margin-left: -10px;
-    }
-    #snippet {
-      width: auto;
     }
 }
