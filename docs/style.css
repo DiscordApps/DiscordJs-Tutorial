@@ -118,11 +118,13 @@ code.js.hljs.javascript {
         position: relative;
         margin-left: 0px;
         margin-top: 270px;
+        width: 100%:
     }
 }
 
 @media only screen and (max-width: 400px) {
     #main-doc {
         margin-left: -10px;
+        width: 100%;
     }
 }
