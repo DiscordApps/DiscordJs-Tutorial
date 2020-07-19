@@ -15,7 +15,7 @@
 
 ---
 
-[![clearlyelevated's github stats](https://github-readme-stats.vercel.app/api?username=clearlyelevated)](https://github.com/anuraghazra/github-readme-stats)
+[![clearlyelevated's github stats](https://github-readme-stats.vercel.app/api?username=clearlyelevated)](https://https://github.com/DiscordApps/DiscordJs-Tutorial/edit/master/README.md
 
 
 
