@@ -15,6 +15,7 @@
 
 ---
 
+[![clearlyelevated's github stats](https://github-readme-stats.vercel.app/api?username=clearlyelevated)](https://github.com/anuraghazra/github-readme-stats)
 
 
 
